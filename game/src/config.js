@@ -21,12 +21,12 @@ export const PALETTE = {
 
 export const LANTERN = {
   radius: 150,
-  fuelMax: 100,
-  burnPerSecond: 2.4,
-  flareCost: 18,
+  fuelMax: 120,
+  burnPerSecond: 1.5,
+  flareCost: 6,
   flareSpeed: 620,
   flareLife: 0.85,
-  dashCost: 12,
+  dashCost: 8,
   dashSpeed: 780,
   dashTime: 0.22,
   dashCooldown: 0.9,
@@ -35,15 +35,15 @@ export const LANTERN = {
 
 export const BEACON = {
   channelSeconds: 2.2, // standing inside to relight it
-  lightRadius: 210,
-  fuelPerSecondInLight: 16,
+  lightRadius: 168,
+  fuelPerSecondInLight: 15,
   countByLevel: [3, 4, 5, 6, 7],
 };
 
 export const TIDE = {
   secondsByLevel: [75, 85, 95, 110, 130],
-  creepPerSecond: 9, // how fast the dark edge walks in while beacons stay unlit
-  retreatPerBeacon: 260,
+  creepPerSecond: 9, // the fallback creep when a valley does not set its own clock
+  retreatPerBeacon: 180,
 };
 
 export const SHADES = {
